@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main-container">
@@ -13,38 +16,39 @@
             0
         </section>
 
-        <section class="calc-bottons">
-                <button class="calc-btn">%</button>
-                <button class="calc-btn">CE</button>
-                <button class="calc-btn">C</button>
-                <button class="calc-btn"><span>s</span></button>
+        <section class="calc-buttons">
+                <button class="calc-btn sbl-btn" id="percentage-btn">%</button>
+                <button class="calc-btn sbl-btn" id="ce-btn">CE</button>
+                <button class="calc-btn sbl-btn" id="c-btn">C</button>
+                <button class="calc-btn sbl-btn" id="delete-btn"><span>&larr;</span></button>
 
-                <button class="calc-btn"><span>s</span></button>
-                <button class="calc-btn"><span>s</span></button>
-                <button class="calc-btn"><span>s</span></button>
-                <button class="calc-btn">÷</button>
+                <button class="calc-btn sbl-btn" id="inv-btn"><span>s</span></button>
+                <button class="calc-btn sbl-btn" id="squaring-btn"><span>s</span></button>
+                <button class="calc-btn sbl-btn" id="sqroots-btn"><span>&radic;</span></button>
+                <button class="calc-btn sbl-btn" id="divide-btn">&divide;</button>
 
-                <button class="calc-btn">7</button>
-                <button class="calc-btn">8</button>
-                <button class="calc-btn">9</button>
-                <button class="calc-btn">x</button>
+                <button class="calc-btn nmb-btn" id="seven-btn">7</button>
+                <button class="calc-btn nmb-btn" id="eight-btn">8</button>
+                <button class="calc-btn nmb-btn" id="nine-btn">9</button>
+                <button class="calc-btn sbl-btn" id="multiply-btn">&times;</button>
 
-                <button class="calc-btn">4</button>
-                <button class="calc-btn">5</button>
-                <button class="calc-btn">6</button>
-                <button class="calc-btn">-</button>
+                <button class="calc-btn nmb-btn" id="four-btn">4</button>
+                <button class="calc-btn nmb-btn" id="five-btn">5</button>
+                <button class="calc-btn nmb-btn" id="six-btn">6</button>
+                <button class="calc-btn sbl-btn" id="less-btn">&minus;</button>
 
-                <button class="calc-btn">1</button>
-                <button class="calc-btn">2</button>
-                <button class="calc-btn">3</button>
-                <button class="calc-btn">+</button>
+                <button class="calc-btn nmb-btn" id="one-btn">1</button>
+                <button class="calc-btn nmb-btn" id="two-btn">2</button>
+                <button class="calc-btn nmb-btn" id="three-btn">3</button>
+                <button class="calc-btn sbl-btn" id="add-btn">&plus;</button>
 
-                <button class="calc-btn">+/-</button>
-                <button class="calc-btn">0</button>
-                <button class="calc-btn">.</button>
-                <button class="calc-btn">=</button>
+                <button class="calc-btn nmb-btn" id="sign-change-btn">+/-</button>
+                <button class="calc-btn nmb-btn" id="zero-btn">0</button>
+                <button class="calc-btn nmb-btn" id="dot-btn">.</button>
+                <button class="calc-btn equal-btn" id="equal-btn">&equals;</button>
         </section>
     </div>
     
+    <script src="./main.js"></script>
 </body>
 </html>
